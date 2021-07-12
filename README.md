@@ -11,8 +11,7 @@ $cd Laboratorio-docker-02/
 ~~~
 3. Revisamos los archivos.
 ~~~
-$ls -la
-  $ ls -l
+$ ls -l
   total 3
   -rw-r--r-- 1 mcampobe 1049089  82 Jul 10 13:53 Dockerfile
   -rw-r--r-- 1 mcampobe 1049089  25 Jul 10 13:51 README.md
