@@ -18,7 +18,7 @@ $ls -la
   -rw-r--r-- 1 mcampobe 1049089  25 Jul 10 13:51 README.md
   -rw-r--r-- 1 mcampobe 1049089 141 Jul 10 13:51 index.html
 ~~~
-4. Creamos el archivo Dockerfile y el archivo index.html en casa ambiente, lo cual contiene el siguiente contenido:
+4. Revisamos el archivo Dockerfile y el archivo index.html.
 ~~~
 $cat index.html
     <!DOCTYPE html>
