@@ -1,6 +1,6 @@
 # Laboratorio Docker 02
 ## En este laboratio se crearán tres contenedores apuntando a tres archivos html (dev, cal, prd), lo cual cada contenedor tendrá su porpio puerto (80, 8080, 8081)
----
+
 ### Para el laboratorio se necesitará tener instalado los siguientes programas:
 * Git (tener cuenta en github)
 * Docker con imagen de Nginx
