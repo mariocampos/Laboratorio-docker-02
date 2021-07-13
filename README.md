@@ -26,7 +26,7 @@ $cat index.html
         <title>Mi web NGINX</title>
     </head>
     <body>
-        <p>Mi web en [Ambiente]</p>
+        <p>Mi web en DESARROLLO</p>
     </body>
     </html>
 
@@ -41,7 +41,7 @@ $cat Dockerfile
 $docker build -t dev:v1.0 .
 ~~~
 >Donde *-t* indica el tag (nombre).
-6. Validamos las imagenes creadas
+6. Validamos la imagen creada
 ~~~
 $ docker images
 REPOSITORY        TAG       IMAGE ID       CREATED              SIZE
@@ -57,7 +57,5 @@ $ docker run -dp 8080:80 --name=desa dev:v1.0
 ~~~
 $ docker ps
 CONTAINER ID   IMAGE      COMMAND                  CREATED              STATUS              PORTS                                   NAMES
-5d591ca874f4   prd:v1.0   "/docker-entrypoint.…"   6 seconds ago        Up 4 seconds        0.0.0.0:80->80/tcp, :::80->80/tcp       pord
-87f1d56c51b0   cal:v1.0   "/docker-entrypoint.…"   32 seconds ago       Up 30 seconds       0.0.0.0:8081->80/tcp, :::8081->80/tcp   cali
 01b0e32b92b9   dev:v1.0   "/docker-entrypoint.…"   About a minute ago   Up About a minute   0.0.0.0:8080->80/tcp, :::8080->80/tcp   desa
 ~~~
