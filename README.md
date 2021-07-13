@@ -1,5 +1,5 @@
 # Laboratorio Docker 02 (Ambiente Desa)
-## En este laboratio se crearán tres contenedores apuntando a tres archivos html (dev, cal, prd), lo cual cada contenedor tendrá su porpio puerto (80, 8080, 8081)
+## En este laboratorio se creará un contenedor en el ambiente de calidad, lo cual se le asignará el puerto 8080.
 
 1. Clonamos el repositorio.
 ~~~
