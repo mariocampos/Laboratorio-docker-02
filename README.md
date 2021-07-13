@@ -36,7 +36,7 @@ $cat Dockerfile
     EXPOSE 80
 ~~~
 >Donde el index es una página web estática (esto para comprobar que cada ambiente tenga su archivo html y su puerto) y el archivo Dockerfile descarga una imagen de *Nginx* con una versión estable copia el archivo index y expone el puerto 80.
-5. Construimos las imagenes con el siguiente comando:
+5. Construimos la imagen con el siguiente comando:
 ~~~
 $docker build -t dev:v1.0 .
 ~~~
