@@ -36,24 +36,24 @@ $cat Dockerfile
     EXPOSE 80
 ~~~
 >Donde el index es una página web estática (esto para comprobar que cada ambiente tenga su archivo html y su puerto) y el archivo Dockerfile descarga una imagen de *Nginx* con una versión estable copia el archivo index y expone el puerto 80.
-4. Construimos las imagenes con el siguiente comando:
+5. Construimos las imagenes con el siguiente comando:
 ~~~
 $docker build -t dev:v1.0 .
 ~~~
 >Donde *-t* indica el tag (nombre).
-5. Validamos las imagenes creadas
+6. Validamos las imagenes creadas
 ~~~
 $ docker images
 REPOSITORY        TAG       IMAGE ID       CREATED              SIZE
 dev               v1.0      69301e7a055e   11 minutes ago       133MB
 ~~~
-6. Construimos los contenedores con el siguiente comando:
+7. Construimos los contenedores con el siguiente comando:
 ~~~
 $ docker run -dp 8080:80 --name=desa dev:v1.0
 01b0e32b92b9c96f17de656f84425037320832a828fcead31efb46ed7a5019ce
 
 ~~~
-7. Validamos los contenedores creados.
+8. Validamos los contenedores creados.
 ~~~
 $ docker ps
 CONTAINER ID   IMAGE      COMMAND                  CREATED              STATUS              PORTS                                   NAMES
